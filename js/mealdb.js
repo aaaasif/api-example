@@ -1,7 +1,7 @@
-const go = document.getElementById('go');
-const txt = document.getElementById('txt');
+const searchBtn = document.getElementById('button-search');
+const searchInput = document.getElementById('search-field');
 
-txt.addEventListener("keypress", function(event){
+searchInput.addEventListener("keypress", function(event){
     event.preventDefault();
     if(event.keyCode ===13)
        go.click();
