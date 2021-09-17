@@ -1,7 +1,17 @@
+const go = document.getElementById('go');
+const txt = document.getElementById('txt');
+
+txt.addEventListener("keypress", function(event){
+    event.preventDefault();
+    if(event.keyCode ===13)
+       go.click();
+});
+
 document.getElementById('error-message').style.display = 'none';
 const searchFood = () => {
     const searchField = document.getElementById('search-field');
     const searchText = searchField.value;
+    
     // clear data
     searchField.value = '';
     document.getElementById('error-message').style.display = 'none';
